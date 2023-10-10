@@ -10,19 +10,23 @@
      <p>
          <?php
          // 変数に値を代入する
-         $score1=80;
-         $score2=60;
-         $score3=55;
-         $score4=40;
-         $score5=100;
-         $score6=25;
-         $score7=80;
-         $score8=95;
-         $score9=30;
-         $score10=60;
+         $nums=[15, 4, 18, 23, 10 ];
+         sort_2way($nums,true);
 
-         $total=$score1+$score2+$score3+$score4+$score5+$score6+$score7+$score8+$score9+$score10;
-         echo $total/10;
+         function sort_2way($array,$order) {
+            if($order){
+                echo'昇順にソートします’；
+                sort($array);
+            } else {
+                echo'降順にソートします';
+                rsort($array);
+            }
+            foreach ($array as $value){
+            }
+        }
+        
+            
+         
          ?>
      </p>
  </body>
